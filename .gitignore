@@ -1,0 +1,27 @@
+@"
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Model Weights, Adapters & Checkpoints
+storage/adapters/
+storage/golden_dataset/*.jsonl
+*.pt
+*.bin
+*.safetensors
+
+# Hugging Face & Pip Cache
+.hf_cache/
+.cache/
+
+# Logs & Temporary Files
+*.log
+storage/adapters/temp/
+"@ | Out-File -FilePath .gitignore -Encoding utf8
